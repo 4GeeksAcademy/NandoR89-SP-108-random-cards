@@ -10,8 +10,7 @@ body{
 }
 
 .card {
-    height: 400px;
-    max-height: 800px;
+    height: 50vh;
 }
 
 .reverse {
