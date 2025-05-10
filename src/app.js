@@ -22,7 +22,27 @@ window.generateRandomCard = function generateRandomCard() {
   let colorSymbol = (randomSymbol === '♥' || randomSymbol === '♦') ? 'red' : 'black';
   symbolUp.style.color = colorSymbol;
   symbolDown.style.color = colorSymbol;
+
 }
+  
+setInterval(generateRandomCard, 5000);
 
+window.sizeCard = function sizeCard() {
 
+  let card = document.querySelector('.card')
+  let heightInput = document.querySelector('#heightInput')
+  let widthInput = document.querySelector('#widthInput')
 
+  if (heightInput.value) {
+    card.style.height = heightInput.value + 'px';
+  }   if (!heightInput.value) {
+    card.style.height = '';
+  }
+
+    if (widthInput.value) {
+    card.style.width = widthInput.value + 'px';
+  } if (!widthInput.value) {
+    card.style.width = '';
+  }
+
+}
