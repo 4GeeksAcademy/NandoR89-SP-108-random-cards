@@ -5,12 +5,8 @@
     padding: 0;
 }
 
-body{
-    background: white;
-}
-
-.card {
-    height: 50vh;
+.background {
+    background: url(./assets/img/images/bg-blackjack.jpg) no-repeat center center / cover;
 }
 
 .reverse {
